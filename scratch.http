@@ -1,0 +1,11 @@
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Hello from scratch", 
+    "description": "Here is my task description" 
+}
+
+
+###
+ 
