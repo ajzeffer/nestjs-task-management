@@ -18,8 +18,9 @@ GET http://localhost:3000/tasks
  DELETE http://localhost:3000/tasks/8d7049b0-4298-11ea-b046-651783244de2
 
 
+@id = cdf6dae0-429c-11ea-b115-dbd9a8c083bd
 ### Update Status 
- PATCH http://localhost:3000/tasks/0293e640-429c-11ea-9e80-013778884ca1/status
+ PATCH http://localhost:3000/tasks/{{id}}/status
  Content-Type: application/json
 
  {
