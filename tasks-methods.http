@@ -1,0 +1,27 @@
+### CREATE
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Hello from scratch", 
+    "description": "Here is my task description" 
+}
+
+
+### GET BY ID 
+GET http://localhost:3000/tasks/4a15a230-429a-11ea-b49b-59abb0818b27
+ 
+### GET ALL 
+GET http://localhost:3000/tasks
+ 
+### DELETE 
+ DELETE http://localhost:3000/tasks/8d7049b0-4298-11ea-b046-651783244de2
+
+
+### Update Status 
+ PATCH http://localhost:3000/tasks/0293e640-429c-11ea-9e80-013778884ca1/status
+ Content-Type: application/json
+
+ {
+     "taskStatus": "IN_PROGRESS"
+ }
