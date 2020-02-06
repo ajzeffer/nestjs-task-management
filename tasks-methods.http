@@ -3,8 +3,8 @@ POST http://localhost:3000/tasks
 Content-Type: application/json
 
 {
-    "title": "Hello from scratch", 
-    "description": "Here is my task description" 
+    "title": "nestjs stuff", 
+    "description": "eat garlic tots again" 
 }
 
 
@@ -13,16 +13,19 @@ GET http://localhost:3000/tasks/4a15a230-429a-11ea-b49b-59abb0818b27
  
 ### GET ALL 
 GET http://localhost:3000/tasks
+
+### GET with Filter 
+GET http://localhost:3000/tasks?search=nes&status=OPEN
  
 ### DELETE 
  DELETE http://localhost:3000/tasks/8d7049b0-4298-11ea-b046-651783244de2
 
 
-@id = cdf6dae0-429c-11ea-b115-dbd9a8c083bd
+@id = 598209b0-48e0-11ea-aee1-99fe58490cc2
 ### Update Status 
  PATCH http://localhost:3000/tasks/{{id}}/status
  Content-Type: application/json
 
  {
-     "taskStatus": "IN_PROGRESS"
+     "taskStatus": "DONE"
  }
